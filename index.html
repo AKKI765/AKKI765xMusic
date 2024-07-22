@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="svgs/AKlogo.svg">
+    <title>AKII765 x Music : A Music Web Application for Your Music.</title>
+</head>
+
+<body>
+
+    <div id="alert-container">
+        <div id="alert-box">
+            <p>Choose your playlists from your directory</p>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+
+
+    <div class="mainContainer" id="main-content">
+
+        <!--- LEFT PART -->
+
+        <div class="left-part">
+
+            <div class="menu">
+
+                <div class="logo">
+                    <div class="logoImgText">
+                        <img class="logoImg" src="svgs/AKlogo.svg" alt="logo">
+                        <h1 class="logoText">AKII765 x Music</h1>
+                    </div>
+
+                    <img class="closeMenu" src="svgs/closeMenu.svg" alt="closeMenu">
+                </div>
+
+                <div class="menuIcon">
+
+                    <div class="iconHome">
+
+                        <img class="icon" src="svgs/home.svg" alt="home">
+                        <a href="">
+                            <p class="iconText">Home</p>
+                        </a>
+
+
+                    </div>
+
+                    <div class="iconSearch">
+                        <img class="icon" src="svgs/search.svg" alt="search">
+                        <p class="iconText">Search</p>
+                        <input type="search" id="searchInput" name="search">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="playlistSongs">
+
+
+                <div class="playlistHeader">
+
+                    <img class="imgplaylist" src="svgs/playlistSongs.svg" alt="playlistSongs">
+                    <span>Playlists Songs</span>
+
+                </div>
+
+                <div class="songsList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>&copy Atul Kumar</p>
+                    <span><a href="privacy.html">Privacy Policy</a></span>
+                    <span><a href="contact.html">Contact</a></span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!--- RIGHT PART -->
+
+
+        <div class="right-part">
+
+            <div class="header">
+
+                <div class="navigation">
+                    <img class="move hamMenu" src="svgs/hamMenu.svg" alt="hamMenu" id="hamMenu">
+                    <img src="svgs/directory.svg" alt="directory" id="selectDirectory">
+                    <div id="dirInfo">
+                            <p>Directory / Folder</p>
+                    </div>
+                    
+
+
+                    <img class="iIcon" src="svgs/info.svg" alt="info" id="infoDIcon">
+                    <div id="onhoverinfo">
+                        <p>Select <b>only directory folder</b> which contain <b>Playlists.</b></p>
+                        <p>i.e,<b>"Music/Playlists/...mp3"</b> Choose <b>Music </b>folder only.</p>
+                        <p>Add cover.jpg and info.json for "title" and "description" </p>
+                    </div>
+                </div>
+
+
+                <div class="btns">
+                    <button class="signup" id="openModalBtn1">SignUp / LogIn</button>
+                    
+                </div>
+
+                <div id="greeting" class="hidden">
+                    <p id="welcomeMessage"></p>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Enter Your Name</h2>
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" required>
+                    <button id="submitBtn">Submit</button>
+                </div>
+            </div>
+
+
+            <div class="playlists">
+                <h1>Playlists</h1>
+                <div class="playlistContainer">
+
+
+                    <!-- <div class="playlistCard"></div> -->
+
+                </div>
+
+
+            </div>
+
+            <div class="playbar">
+
+
+                <div class="playbarCollection">
+
+                    <div class="songName">
+                        <div class="songDetail">
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="playbarbtn">
+
+                        <img id="previous" src="svgs/previous.svg" alt="previous">
+                        <img id="play" src="svgs/play.svg" alt="play">
+                        <img id="next" src="svgs/next.svg" alt="next">
+
+
+                    </div>
+
+                    <div class="songTimeVolume">
+
+                        <div class="songTime">
+
+                        </div>
+
+                        <div class="volume">
+                            <img src="svgs/volume.svg" alt="volume">
+                            <div class="volumeRange">
+                                <input type="range" name="volumeRange">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="seekbar">
+                    <div class="point">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+.navHeader{
+    width:100vw;
+    height:10vh;
+    background-color: rgb(3, 4, 3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.navHeader img{
+    width:50px;
+}
+
+.privacyIntro{
+    height:10vh;
+    padding:50px 50px;
+    margin:50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: linear-gradient(blue, pink);
+}
+
+.privacyDescription{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(70deg,rgb(70, 176, 104), rgb(228, 160, 171));
+
+}
+
+.privacyDescription h2{
+    padding:15px 50px;
+    
+}
+
+.privacyDescription p{
+    padding:1px 50px;
+}
+
+.privacyDescription ul{
+    padding:5px 70px;
+}
+
+h4{
+    
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.foot{
+    background-color: black;
+    color: white;
+    width:100vw;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+/* Mobile devices */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .privacyIntro{
+        height:10vh;
+        padding:100px 0px;
+        margin:30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        background: linear-gradient(blue, pink);
+    }
+
+    .privacyIntro h1{
+
+        font-size: larger;
+        font-weight: bolder;
+
+    }
+
+    .privacyIntro h4{
+
+        font-size: small;
+
+    }
+}
+
+/* Tablets/iPads */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Computers/Desktops/TVs */
+@media only screen and (min-width: 1025px) {
+    body {
+        background-color: lightblue;
+    }
+}

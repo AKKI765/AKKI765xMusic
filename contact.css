@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: large;
+    font-style: normal;
+}
+
+.contact{
+    width: 100vw;
+    min-height:100vh;
+    /* background-color: rgb(116, 151, 196); */
+}
+
+.contactHeader{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+}
+
+.contactPart{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.socialLinks h2{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+
+.contactFirstPart{
+    width:100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:10px 0;
+    
+   
+}
+
+
+.socialSVG:hover{
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+    transform: scale(1.5);
+}
+
+
+
+
+.contactSecondPart{
+    width:100vw;
+    /* min-height:2vh; */
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0px;
+}
+
+form{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap:10px;
+}
+
+label{
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+input{
+    border-radius: 4px solid black;
+    font-size: 20px;
+    width:500px;
+    margin-left:12px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border:2px solid black;
+    
+}
+
+#message{
+    height:100px;
+    margin-left:-15px;
+}
+
+textarea{
+    width:500px;
+    border-radius: 4px solid black;
+    font-size: 20px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border:2px solid black;
+    
+}
+
+button{
+    width:100px;
+    height:40px;
+    background-color: rgb(0, 220, 184);
+    border:none;
+    border-radius: 5px;
+    font-weight: bolder;
+   
+}
+
+
+.contactFooter{
+    background-color: black;
+    color: white;
+    width:100vw;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(1, 66, 55);
+    transition: all .3s;
+    color: white;
+}
+
+
+
+
+
+/* Mobile devices */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+
+    label{
+        font-weight: bolder;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+    
+    input{
+        border-radius: 4px solid black;
+        font-size: 20px;
+        width:200px;
+        margin-left:12px;
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        
+    }
+    
+    #message{
+        height:100px;
+        margin-left:-15px;
+    }
+    
+    textarea{
+        width:200px;
+        border-radius: 4px solid black;
+        font-size: 20px;
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        
+    }
+
+    
+}
+
+/* Tablets/iPads */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color:  lightcyan;
+    }
+}
+
+/* Computers/Desktops/TVs */
+@media only screen and (min-width: 1025px) {
+    body {
+        background-color: lightcyan;
+    }
+
+}
+
