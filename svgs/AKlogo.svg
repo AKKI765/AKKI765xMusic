@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #FF5733; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #FFC300; stop-opacity: 1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #33FF57; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #33FFEC; stop-opacity: 1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <circle cx="200" cy="200" r="180" fill="#1DB954"/>
+  <path d="M280 140C280 88.6 249.4 64 200 64C150.6 64 120 88.6 120 140C120 191.4 150.6 216 200 216C249.4 216 280 191.4 280 140Z" fill="#FFF"/>
+  <path d="M200 232C148.6 232 120 256.6 120 308C120 359.4 148.6 384 200 384C251.4 384 280 359.4 280 308C280 256.6 251.4 232 200 232ZM190 313C186 313 184 312 184 308C184 304 186 303 190 303C194 303 196 304 196 308C196 312 194 313 190 313ZM210 327C206 327 204 326 204 322C204 318 206 317 210 317C214 317 216 318 216 322C216 326 214 327 210 327Z" fill="#FFF"/>
+  <text x="50" y="200" font-family="Verdana" font-size="200" fill="url(#gradient1)" filter="url(#shadow)">
+    AK
+  </text>
+  <text x="55" y="205" font-family="Verdana" font-size="180" fill="url(#gradient2)" opacity="0.7">
+    AK
+  </text>
+  <text x="80" y="320" font-family="cursive" font-size="50" fill="black">
+    Atul Kumar
+  </text>
+</svg>
