@@ -6,8 +6,7 @@ AKKI765xMusic :A Music Web Application for Your Music.
 <h3 align="center">It is like a music player.</h3>
 
 <h1 align="center">*** Info ***</h1>
-<h3 align="center">It may not work in some/many browsers because of File System Access API in which
-showDirectoryPicker is used.</h3>
+<h3 align="center">It may not work in some/many browsers because of File System Access API - showDirectoryPicker()</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">https://github.com/AKKI765/</p>
