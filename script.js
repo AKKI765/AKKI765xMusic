@@ -43,6 +43,8 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
+
+
 async function getDirectoryHandle() {
     songsFolderHandle = await window.showDirectoryPicker();
     displayPlaylist();
@@ -221,14 +223,14 @@ async function displayPlaylist() {
     }
 }
 
-async function main() {
+function main() {
     
-    await getDirectoryHandle();
+    getDirectoryHandle();
 
     // Start with the first song if available
     
     if (songs.length > 0) {
-        await playSong(songs[0], true); 
+        playSong(songs[0], true); 
     }
 
     // Play and Pause
@@ -243,21 +245,7 @@ async function main() {
     });
 
 
-    document.addEventListener('keydown', (event) => {
-    if (event.code === 'Space') {
-        event.preventDefault(); 
-        if (playingCurrentSong.paused) {
-            playingCurrentSong.play().then(() => {
-                play.src = "svgs/pause.svg";
-            }).catch(error => {
-                console.error("Error playing song:", error);
-            });
-        } else {
-            playingCurrentSong.pause();
-            play.src = "svgs/play.svg";
-        }
-    }
-});
+    
 
     // Duration of playing song
     playingCurrentSong.addEventListener("timeupdate", () => {
@@ -344,10 +332,28 @@ if ('mediaSession' in navigator) {
 document.getElementById("selectDirectory").addEventListener("click", async () => {
     await getDirectoryHandle();
     await main();
+    
 });
 
 
 
+// Space button to Play and Pause
+
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        event.preventDefault(); 
+        if (playingCurrentSong.paused) {
+            playingCurrentSong.play().then(() => {
+                play.src = "svgs/pause.svg";
+            }).catch(error => {
+                console.error("Error playing song:", error);
+            });
+        } else {
+            playingCurrentSong.pause();
+            play.src = "svgs/play.svg";
+        }
+    }
+});
 
 
 
