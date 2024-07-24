@@ -572,7 +572,7 @@ h1{
 
 /* Small Mobile Devices */
 
-@media only screen and (max-width:367px){
+@media only screen and (max-width:376px){
 
    
 
@@ -628,7 +628,7 @@ h1{
     .playlistContainer{
         position: relative;
         overflow-y: auto;
-        max-height: 77vh;
+        max-height: 36vh;
         width:90vw;
         display:flex;
         flex-wrap: wrap;
@@ -639,7 +639,7 @@ h1{
 
     .playlistCard{
         width:270px;
-        height:400px;
+        height:350px;
         background-color: rgb(208, 193, 193);
         border-radius: 5px;
         position: relative;
@@ -786,7 +786,7 @@ h1{
 /* Small Mobile Devices */
 
 
-@media only screen and (min-width: 367px) and (max-width: 400px){
+@media only screen and (min-width: 376px) and (max-width: 400px){
 
     
 
@@ -838,7 +838,7 @@ h1{
     .playlistContainer{
         position: relative;
         overflow-y: auto;
-        max-height: 77vh;
+        max-height: 47vh;
         width:96vw;
         display: grid;
         gap: 25px; 
@@ -1050,7 +1050,7 @@ h1{
     .playlistContainer{
         position: relative;
         overflow-y: auto;
-        max-height: 77vh;
+        max-height: 50vh;
         width:94vw;
         display: grid;
         gap: 25px; 
@@ -1198,7 +1198,7 @@ h1{
     .playlistContainer{
         position: relative;
         overflow-y: auto;
-        max-height: 77vh;
+        max-height: 70vh;
         width:94vw;
         display: grid;
         gap: 20px; 
