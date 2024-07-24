@@ -1295,49 +1295,6 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------------------------- Modal ----------------------------*/
 
 
@@ -1412,13 +1369,6 @@ button:hover{
 /* ALERT */
 
 
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-} */
-
 #alert-container {
     position: fixed;
     top: 0;
@@ -1466,8 +1416,8 @@ button:hover{
 }
 
 #main-content {
-    opacity: 1; /* Initially hide the main content */
-    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
 }
 
 .show-content {
